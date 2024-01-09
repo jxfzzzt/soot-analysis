@@ -18,9 +18,6 @@ public class MethodTest {
         return list;
     }
 
-    public int add(int x, int y) {
-        return x + y;
-    }
 
     public List<String> test01(int x, int y) {
         if (add(x, y) >= 5) {
@@ -54,6 +51,17 @@ public class MethodTest {
         A aa = new A();
         aa.age = a.age;
         aa.setName(a.getName());
+    }
+
+
+    private int add(int a, int b) {
+        int sum = a + b;
+        return sum;
+    }
+
+    public void test06(int x) {
+        int add = add(this.number, x);
+        System.out.println(add);
     }
 
 }
