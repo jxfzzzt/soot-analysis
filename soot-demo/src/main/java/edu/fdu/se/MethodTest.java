@@ -60,8 +60,17 @@ public class MethodTest {
     }
 
     public void test06(int x) {
+        A a = new A();
         int add = add(this.number, x);
         System.out.println(add);
+    }
+
+    public void test07(int x) {
+        if(x > 5) {
+            System.out.println("more than five");
+        } else {
+            System.out.println("less than five");
+        }
     }
 
 }

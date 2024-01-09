@@ -5,6 +5,7 @@ import edu.fdu.se.util.SootUtil;
 import lombok.extern.slf4j.Slf4j;
 import soot.*;
 import soot.jimple.internal.JAssignStmt;
+import soot.jimple.internal.JSpecialInvokeExpr;
 import soot.jimple.internal.JVirtualInvokeExpr;
 
 import java.lang.reflect.InvocationTargetException;
